@@ -13,24 +13,16 @@
         <mxCell id="kfzyKHz202Gi02qHzqS_-1" value="MongoDB&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Port 27017&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="500" y="200" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="SxR1KS9WynTYfv9ovRZq-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="40BUUrwjcpZY6FBePm1L-3" target="SxR1KS9WynTYfv9ovRZq-4">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="340" y="560" />
-              <mxPoint x="340" y="560" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="SxR1KS9WynTYfv9ovRZq-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="40BUUrwjcpZY6FBePm1L-3" target="SxR1KS9WynTYfv9ovRZq-4">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="280" y="560" />
-              <mxPoint x="280" y="560" />
+              <mxPoint x="310" y="510" />
+              <mxPoint x="310" y="510" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="40BUUrwjcpZY6FBePm1L-3" value="Localhost " style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="250" y="610" width="120" height="60" as="geometry" />
+        <mxCell id="40BUUrwjcpZY6FBePm1L-3" value="&lt;div&gt;Localhost &lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;Proxy port : 8080&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;App1 port 5001&lt;/div&gt;App2 port 5002" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="250" y="550" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="SxR1KS9WynTYfv9ovRZq-1" value="&lt;div&gt;Container&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Alpine Linux + python3&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Flask web server&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="120" y="200" width="160" height="160" as="geometry" />
@@ -38,14 +30,15 @@
         <mxCell id="SxR1KS9WynTYfv9ovRZq-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.03;entryY=0.574;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="bLaivBeO2kU0AsJOEq1G-2" target="kfzyKHz202Gi02qHzqS_-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SxR1KS9WynTYfv9ovRZq-4" value="&lt;div&gt;NGINX&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Proxy port : 8080&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;App1 port 5001&lt;/div&gt;&lt;div&gt;App2 port 5002&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="250" y="440" width="120" height="100" as="geometry" />
+        <mxCell id="SxR1KS9WynTYfv9ovRZq-4" value="&lt;div&gt;NGINX&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="390" width="120" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="SxR1KS9WynTYfv9ovRZq-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.46;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="SxR1KS9WynTYfv9ovRZq-4" target="SxR1KS9WynTYfv9ovRZq-1">
+        <mxCell id="SxR1KS9WynTYfv9ovRZq-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.979;entryY=0.471;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="SxR1KS9WynTYfv9ovRZq-1">
           <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="390" as="sourcePoint" />
+            <mxPoint x="290" y="273.5999999999999" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="290" y="430" />
-              <mxPoint x="290" y="430" />
+              <mxPoint x="290" y="275" />
             </Array>
           </mxGeometry>
         </mxCell>
