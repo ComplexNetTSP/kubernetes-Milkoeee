@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+
+  name: webnodb-deployment
+  namespace: egirard
+
+spec:
+
+  replicas: 2
+
+  selector:
+
+    matchLabels:
+
+      app: webnodb
+
+  template:
+
+    metadata:
+
+      labels:
+
+        app: webnodb
+
+    spec:
+
+      containers:
+
+      - name: app
+
+        image: milkoeee/q1:latest
+
+        ports:
+
+        - containerPort: 5000
+
+        resources:
+          requests:
+            memory: "100M"
+            cpu: "100m"
+          limits:
+            memory: "100M"
+            cpu: "200m"

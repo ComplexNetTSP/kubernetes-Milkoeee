@@ -1,0 +1,33 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services: 
+
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+
+
+  app2:
+    image: milkoeee/q4:app2
+    ports:
+      - "5002:5000"
+  
+  app1:
+    image: milkoeee/q4:app1
+    ports:
+      - "5001:5000"
+  
+  nginx: 
+    image: milkoeee/q4:nginx
+    ports:
+    - "8080:80"
+    depends_on:
+    - app1
+    - app2
+      

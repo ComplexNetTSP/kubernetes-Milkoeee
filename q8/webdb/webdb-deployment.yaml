@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+
+  name: webdb-deployment
+  namespace: egirard
+
+spec:
+
+  replicas: 3
+
+  selector:
+
+    matchLabels:
+
+      app: webdb
+
+  template:
+
+    metadata:
+
+      labels:
+
+        app: webdb
+
+    spec:
+
+      containers:
+
+      - name: app
+
+        image: milkoeee/q8:latest
+
+        ports:
+
+        - containerPort: 5000
+
+        resources:
+          requests:
+            memory: "100M"
+            cpu: "100m"
+          limits:
+            memory: "100M"
+            cpu: "200m"

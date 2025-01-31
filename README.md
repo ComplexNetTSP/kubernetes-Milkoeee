@@ -8,6 +8,7 @@
 
 ### Teacher: [Vincent Gauthier](mailto:vincent.gauthier@telecom-sudparis.eu)
 ### Assistant: [Timothée Mathubert](mailto:timothee.mathubert@telecom-sudparis.eu) 
+### Student: Emile Girard
 
 ## Introduction
 * Clone this repository

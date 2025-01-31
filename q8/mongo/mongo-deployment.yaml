@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+
+  name: mongo-deployment
+  namespace: egirard
+
+spec:
+
+  replicas: 1
+
+  selector:
+
+    matchLabels:
+
+      app: mongo
+
+  template:
+
+    metadata:
+
+      labels:
+
+        app: mongo
+
+    spec:
+
+      containers:
+
+      - name: app
+
+        image: mongo
+
+        ports:
+
+        - containerPort: 8080
+
+        resources:
+          requests:
+            memory: "100M"
+            cpu: "100m"
+          limits:
+            memory: "100M"
+            cpu: "200m"
