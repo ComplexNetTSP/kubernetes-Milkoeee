@@ -31,7 +31,7 @@ spec:
 
       - name: app
 
-        image: milkoeee/q8:latest
+        image: milkoeee/q8:webdb
 
         ports:
 
@@ -42,5 +42,5 @@ spec:
             memory: "100M"
             cpu: "100m"
           limits:
-            memory: "100M"
+            memory: "200M"
             cpu: "200m"
